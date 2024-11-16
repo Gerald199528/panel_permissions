@@ -1,0 +1,8 @@
+php artisan db:seed --class=PermissionTableSeeder
+php artisan db:seed --class=CreateAdminUserSeeder
+
+composer require laravel-lang/common --dev
+php artisan lang:add fr
+php artisan lang:update
+
+php artisan datatables:make Users
